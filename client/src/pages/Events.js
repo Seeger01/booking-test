@@ -255,9 +255,16 @@ class EventsPage extends React.Component {
 						<h1>{this.state.selectedEvent.title}</h1>
 						<p>{this.state.selectedEvent.description}</p>
 						<h2 className="h2pricing">
-							Price: ${this.state.selectedEvent.price} -{" "} <br/>
-							Date: {new Date(this.state.selectedEvent.date).toLocaleDateString("dk-DK")} <br/>
-							Time: {new Date(this.state.selectedEvent.date).toLocaleTimeString("dk-DK")}
+							Price: ${this.state.selectedEvent.price} - <br />
+							Date:{" "}
+							{new Date(this.state.selectedEvent.date).toLocaleDateString(
+								"dk-DK"
+							)}{" "}
+							<br />
+							Time:{" "}
+							{new Date(this.state.selectedEvent.date).toLocaleTimeString(
+								"dk-DK"
+							)}
 						</h2>
 					</Modal>
 				)}
