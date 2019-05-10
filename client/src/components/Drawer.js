@@ -17,16 +17,16 @@ const Drawer = props => {
 					<ul>
 						{!context.token && (
 							<li>
-								<NavLink onClick={props.show} to="/auth">Login</NavLink>
+								<NavLink onClick={props.drawerClick} to="/auth">Login</NavLink>
 							</li>
 						)}
 						<li>
-							<NavLink onClick={props.show} to="/events">Events</NavLink>
+							<NavLink onClick={props.drawerClick} to="/events">Events</NavLink>
 						</li>
 						{context.token && (
 							<React.Fragment>
 								<li>
-									<NavLink to="/bookings">Bookings</NavLink>
+									<NavLink onClick={props.drawerClick} to="/bookings">Bookings</NavLink>
 								</li>
 								<li>
 									<button onClick={context.logout}>Logout</button>

@@ -55,7 +55,7 @@ class App extends React.Component {
           >
             <div className="content-section">
               <MainNavigation drawerClick={this.drawerClickHandler} />
-              <Drawer show={this.state.drawerOpen} />
+              <Drawer drawerClick={this.drawerClickHandler} show={this.state.drawerOpen} />
               {backdrop}
               <main className="main-content">
                 <Switch>
