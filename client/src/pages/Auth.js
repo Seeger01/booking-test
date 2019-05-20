@@ -62,7 +62,7 @@ class AuthPage extends React.Component {
 			};
 		}
 
-		fetch("/graphql", {
+		fetch("/graphql" || "http://localhost:3001/graphql", {
 			method: "POST",
 			body: JSON.stringify(requestBody),
 			headers: {
