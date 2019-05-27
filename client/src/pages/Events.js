@@ -49,7 +49,6 @@ class EventsPage extends React.Component {
 		}
 
 		const event = { title, price, date, description };
-		console.log(event);
 
 		const requestBody = {
 			query: `
@@ -121,6 +120,7 @@ class EventsPage extends React.Component {
 							title
 							date
 							price
+							description
 							creator {
 								_id
 								email
