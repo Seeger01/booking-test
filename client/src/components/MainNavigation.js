@@ -14,6 +14,9 @@ const MainNavigation = props => (
 					<div className="main-navigation-logo">
 						<h1>EventBooking</h1>
 					</div>
+					{context.token && (
+						<div className="loggedin">logged in</div>
+					)}
 					<div className="main-navigation-items">
 						<ul>
 							{!context.token && (

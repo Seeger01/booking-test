@@ -63,10 +63,18 @@
 	.main-navigation-items {
 		display: none;
 	}
+	.loggedin {
+	font-family: inherit;
+	font-size: 0.6rem;
+	color: white;
+}
 }
 
 @media (min-width: 769px) {
 	.main-navigation-logo {
 		left: 3rem;
+	}
+	.loggedin {
+		display: none;
 	}
 }
