@@ -4,7 +4,7 @@ import "./EventItem.css";
 
 const eventItem = props => (
 	<li key={props.eventId} className="events-list-item">
-		<div>
+		<div className="events-list-item-right">
 			<h1>{props.title}</h1>
 			<h2>
 				Price: ${props.price} <br /> Date:{" "}

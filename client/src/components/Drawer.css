@@ -8,16 +8,12 @@
 	width: 70%;
 	max-width: 400px;
 	z-index: 200;
-	-webkit-transform: translateX(-100%);
-	        transform: translateX(-100%);
-	transition: -webkit-transform 0.3s ease-out;
+	transform: translateX(-100%);
 	transition: transform 0.3s ease-out;
-	transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
 .side-drawer.open {
-	-webkit-transform: translateX(0);
-	        transform: translateX(0);
+	transform: translateX(0);
 }
 
 .side-drawer ul {
@@ -51,7 +47,7 @@
 .side-drawer button:hover,
 .side-drawer button:active {
 	background: #fff;
-	color: #5101d1;
+	color: #1579ac;
 	border-radius: 5px;
 }
 
