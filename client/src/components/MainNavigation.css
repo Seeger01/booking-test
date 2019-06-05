@@ -71,6 +71,9 @@
 		position: absolute;
 		right: 1rem;
 	}
+	.main-navigation-logo {
+		position: initial;
+	}
 }
 
 @media (min-width: 769px) {
