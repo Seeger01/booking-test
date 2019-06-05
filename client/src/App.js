@@ -15,7 +15,8 @@ class App extends React.Component {
   state = {
     token: null,
     userId: null,
-    drawerOpen: false
+    drawerOpen: false,
+    data: window.data.images.blocks
   };
 
   login = (token, userId, tokenExpiration) => {
@@ -54,7 +55,7 @@ class App extends React.Component {
             }}
           >
             <div className="content-section">
-              <MainNavigation drawerClick={this.drawerClickHandler} />
+              <MainNavigation drawerClick={this.drawerClickHandler} logo={this.state.data.logo} />
               <Drawer drawerClick={this.drawerClickHandler} show={this.state.drawerOpen} />
               {backdrop}
               <main className="main-content">

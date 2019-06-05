@@ -12,7 +12,7 @@ const MainNavigation = props => (
 				<header className="main-navigation">
 						<DrawerButton click={props.drawerClick} />
 					<div className="main-navigation-logo">
-						<h1>EventBooking</h1>
+						<img src={props.logo} alt="logo"/>
 					</div>
 					{context.token && (
 						<div className="loggedin">logged in</div>

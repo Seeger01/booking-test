@@ -22,10 +22,11 @@
 	position: absolute;
 	left: 6rem;
 }
-.main-navigation-logo h1 {
+.main-navigation-logo img {
 	margin: 0;
-	font-size: 1.5rem;
+	height: 2.5rem;
 	color: #d8fafe;
+	padding-top: 2px; 
 }
 .main-navigation-items {
 	margin-left: 1.5rem;
